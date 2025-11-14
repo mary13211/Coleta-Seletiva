@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Coleta Seletiva - Reciclar Transforma</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#17cf54",
+            "background-light": "#f6f8f6",
+            "background-dark": "#112116",
+            "primary-dark": "#0e1b12",
+            "primary-light": "#f8fcf9",
+            "secondary-dark": "#4e9767",
+            "secondary-light": "#d0e7d7",
+          },
+          fontFamily: {
+            "display": ["Public Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-primary-dark dark:text-primary-light">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-secondary-light dark:border-primary-dark">
+<div class="flex items-center justify-between whitespace-nowrap px-4 sm:px-10 py-3 w-full max-w-6xl">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Coleta Seletiva</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center items-center gap-9">
+<a class="text-sm font-medium leading-normal text-primary" href="#">Início</a>
+<a class='text-sm font-medium leading-normal hover:text-primary transition-colors' href='/como'>Como Funciona</a>
+<a class='text-sm font-medium leading-normal hover:text-primary transition-colors' href='ponto.html'>Pontos de Coleta</a>
+<a class='text-sm font-medium leading-normal hover:text-primary transition-colors' href='sobre.html'>Sobre Nós</a>
+<a class='text-sm font-medium leading-normal hover:text-primary transition-colors' href='contato.html'>Contato</a>
+</div>
+<button class="hidden sm:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-primary-dark text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors">
+<span class="truncate">Encontre Pontos</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 flex-col items-center">
+<div class="flex flex-col w-full max-w-6xl px-4 sm:px-10 py-5">
+<!-- HeroSection -->
+<div class="@container w-full">
+<div class="p-0 @[480px]:p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4 text-center" data-alt="Close-up of a person's hands holding a small green seedling, symbolizing growth and environmental care." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAot4BwIzxOXbiHSGsBsN_LC6R8F79V3WDZTdF5LHxo-1fEj3VEXXnXRHiOnw5AgOQCvXcETsBOtbHGm8T4QjDlMEL9_FdWdJFEWO3-pYP_brO8YKM186S1PhKfmnzlQSSHsD6EIlZX4fKjKw_F-7toir8IvuuQJCVHVG9Ggdr9CrJEemZwQiuD7QhdipWAJjlfQ2dbPnFhxx8BrNPNctp40MIhB4JBcwUbz9d8zDZLukYxRC8a9yM7c5lofL8blBMHONDJ7QSMgKo");'>
+<div class="flex flex-col gap-2">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">Reciclar Transforma. Comece Hoje.</h1>
+<h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base max-w-2xl mx-auto">Facilitamos a coleta seletiva na sua cidade. Encontre os pontos de descarte mais próximos e faça a sua parte pelo planeta.</h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-primary-dark text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base hover:bg-opacity-90 transition-colors">
+<span class="truncate">Encontre Pontos de Coleta Perto de Você</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SectionHeader -->
+<h2 class="text-center text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-16">Simples, Rápido e Eficiente</h2>
+<!-- FeatureSection -->
+<div class="flex flex-col gap-10 px-4 py-10 @container">
+<div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 p-0">
+<div class="flex flex-1 gap-4 rounded-lg border border-secondary-light dark:border-primary-dark bg-primary-light dark:bg-primary-dark/50 p-6 flex-col items-center text-center">
+<div class="text-primary text-4xl">
+<span class="material-symbols-outlined">restart_alt</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight">1. Separe</h3>
+<p class="text-secondary-dark dark:text-secondary-light text-sm font-normal leading-normal">Organize seus recicláveis em casa, separando plástico, papel, metal e vidro.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-secondary-light dark:border-primary-dark bg-primary-light dark:bg-primary-dark/50 p-6 flex-col items-center text-center">
+<div class="text-primary text-4xl">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight">2. Encontre</h3>
+<p class="text-secondary-dark dark:text-secondary-light text-sm font-normal leading-normal">Use nosso mapa interativo para localizar o ponto de coleta mais conveniente para você.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-secondary-light dark:border-primary-dark bg-primary-light dark:bg-primary-dark/50 p-6 flex-col items-center text-center">
+<div class="text-primary text-4xl">
+<span class="material-symbols-outlined">recycling</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight">3. Descarte</h3>
+<p class="text-secondary-dark dark:text-secondary-light text-sm font-normal leading-normal">Leve seus materiais ao ponto de coleta e contribua para um futuro mais sustentável.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- SectionHeader for ImageGrid -->
+<h2 class="text-center text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-10">Explore e Aprenda</h2>
+<!-- ImageGrid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 p-4">
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Colorful array of recyclable materials like plastic bottles, glass jars, and cardboard neatly sorted." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9jhT9uq8hxVJELzOZ1kehJ-ptosZi0Srb8OwobLSMzFY1_tOTnPkT5FV3j41vk3xYGDwPJxju2OuiEwmtbmYVfo6yV1Ots13tZRKVYzIpqwOhc4RXSL2fX_OasrgAcLfGUT0PYkNN7o4VMj515YIZjYeG8hnNHnbQ4JppKkSvThyW6j4niJYuvxHdzp2lcyAQ4VYfIrZlkuCTQurAGNil7aOxulqbdoFYOgIm-IBc6I8BhFpAnLlveoec5oRxZL9y-zR-eHzXoWQ");'></div>
+<div>
+<p class="text-base font-medium leading-normal">Tipos de Recicláveis</p>
+<p class="text-secondary-dark dark:text-secondary-light text-sm font-normal leading-normal">Aprenda a separar corretamente cada tipo de material.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="A person writing in a notebook in a bright, sunlit room, with a laptop nearby." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCddtjLAONVwjcKRCpo_uB3VaZjrSyCU82oPXJ85d15WJuFns3pSS4xBVmMxJmSPgRuFOvNsQSJcCWjpSEafTuM5wHKhnQOxPc_BYcf_AaHSGvkvvWP_oiJygY3tLMM3sVZ4N2ViRejev3l77va4-3mXb0LU7hk3yWi4u3XZXUJWI0dLX8gf4msg1pVPgV71bjyaIEfdntrINZpolS-ju-x-e__bnmxykIIlVI3SZ-ab7-25AFWYfJ-2VRXEJnB83R4PrlaaxQ5QZI");'></div>
+<div>
+<p class="text-base font-medium leading-normal">Nosso Último Post no Blog</p>
+<p class="text-secondary-dark dark:text-secondary-light text-sm font-normal leading-normal">Veja como pequenas ações podem fazer uma grande diferença.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="A wind turbine farm at sunset, showcasing renewable energy and sustainability." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfJaAmHCRBca6nxVF6h866bt0zkRDddCBx5TvDrkVwd4BP-RKuKim-aeGHlY8MOKKtGCia6eB1tsummlbXEEsn42hRSA-spEZ0ORKXuRWt0wnLxnTd91QrgWOrXFFdsGgrIZzJgsFnwd0fxuFZCpdq_ckVfyYJkjBDXMAjXrCvBdUNPzFFUUHsfbL850kcECwBOo_gbXHXOqbwnrPKPoLLMYZT48sNZZNmWFs_uB23QHERyNxwZzM9NPUm4DIwLHt8ZyB3TbSW3Ds");'></div>
+<div>
+<p class="text-base font-medium leading-normal">Notícias de Sustentabilidade</p>
+<p class="text-secondary-dark dark:text-secondary-light text-sm font-normal leading-normal">Fique por dentro das últimas novidades do mundo da reciclagem.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-light dark:bg-primary-dark/50 border-t border-secondary-light dark:border-primary-dark mt-16">
+<div class="w-full max-w-6xl mx-auto px-4 sm:px-10 py-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Column 1: Logo and Mission -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold">Coleta Seletiva</h2>
+</div>
+<p class="text-sm text-secondary-dark dark:text-secondary-light">Tornando a reciclagem acessível para todos e construindo um futuro mais verde, uma coleta de cada vez.</p>
+</div>
+<!-- Column 2: Site Map -->
+<div class="flex flex-col gap-4">
+<h3 class="font-bold">Mapa do Site</h3>
+<ul class="flex flex-col gap-2 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Início</a></li>
+<li><a class='hover:text-primary transition-colors' href='#'>Como Funciona</a></li>
+<li><a class='hover:text-primary transition-colors' href='ponto.html'>Pontos de Coleta</a></li>
+<li><a class='hover:text-primary transition-colors' href='sobre.html'>Sobre Nós</a></li>
+<li><a class='hover:text-primary transition-colors' href='#'>Contato</a></li>
+</ul>
+</div>
+<!-- Column 3: Social Media -->
+<div class="flex flex-col gap-4">
+<h3 class="font-bold">Siga-nos</h3>
+<div class="flex gap-4">
+<a class="text-secondary-dark dark:text-secondary-light hover:text-primary transition-colors" data-alt="Instagram logo" href="#">
+<svg aria-hidden="true" class="size-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c-4.04.058-4.52 1.62-4.54 4.572-.023 2.95.49 3.42 1.48 3.82.98.4 1.39.23 1.8.02s1.08-.8 2.68-.8c1.6 0 2.29.58 2.68.79.4.21.82.37 1.8.01 1-.4 1.5-1.03 1.48-3.82C16.83 3.62 16.35 2.06 12.315 2zm-1.04 8.78c-1.06.33-1.46.7-1.46 1.86 0 1.95 1.13 1.63 2.75 1.63 1.62 0 2.75.32 2.75-1.63 0-1.17-.4-1.53-1.46-1.86-1.07-.33-1.25-.33-2.58 0zm-5.46-2.22c-1.38.4-2.25 1.37-2.31 2.82-.06 1.45.62 2.72 2.31 2.82 1.7.1 2.56-1.07 2.56-2.82 0-1.75-.85-2.92-2.56-2.82zM20.2 11.34c-1.7-.1-2.56 1.07-2.56 2.82 0 1.75.85 2.92 2.56 2.82 1.69-.1 2.37-1.37 2.31-2.82-.06-1.45-.92-2.42-2.31-2.82z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-secondary-dark dark:text-secondary-light hover:text-primary transition-colors" data-alt="Facebook logo" href="#">
+<svg aria-hidden="true" class="size-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+<!-- Column 4: Contact -->
+<div class="flex flex-col gap-4">
+<h3 class="font-bold">Contato</h3>
+<ul class="flex flex-col gap-2 text-sm text-secondary-dark dark:text-secondary-light">
+<li><a class="hover:text-primary transition-colors" href="mailto:contato@coletaseletiva.com">contato@coletaseletiva.com</a></li>
+<li>Rua Verde, 123, Bairro Ecológico</li>
+<li>Cidade Sustentável, Brasil</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-secondary-light dark:border-primary-dark mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-secondary-dark dark:text-secondary-light">
+<p>© 2024 Coleta Seletiva. Todos os direitos reservados.</p>
+<div class="flex gap-4 mt-4 sm:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Política de Privacidade</a>
+<a class="hover:text-primary transition-colors" href="#">Termos de Uso</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

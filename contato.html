@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato - Coleta Seletiva</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#17cf54",
+              "background-light": "#f6f8f6",
+              "background-dark": "#112116",
+            },
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-20 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex justify-center px-4 sm:px-8 lg:px-16">
+<div class="flex w-full max-w-7xl items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 py-3">
+<div class="flex items-center gap-4 text-zinc-900 dark:text-zinc-50">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined !text-3xl">recycling</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-zinc-900 dark:text-zinc-50">Coleta Seletiva</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium leading-normal text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors" href="index.html">Início</a>
+<a class="text-sm font-medium leading-normal text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors" href="sobre.html">Sobre Nós</a>
+<a class="text-sm font-medium leading-normal text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Serviços</a>
+<a class="text-sm font-bold leading-normal text-primary dark:text-primary transition-colors" href="#">Contato</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-zinc-900 dark:text-zinc-900 text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Login</span>
+</button>
+<button class="md:hidden p-2 rounded-md text-zinc-900 dark:text-zinc-50 hover:bg-zinc-100 dark:hover:bg-zinc-800">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 px-4 sm:px-8 lg:px-16">
+<div class="layout-content-container flex flex-col w-full max-w-7xl flex-1">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex w-full flex-col gap-3">
+<p class="text-zinc-900 dark:text-zinc-50 text-4xl font-black leading-tight tracking-[-0.033em]">Entre em Contato</p>
+<p class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal max-w-2xl">Tem alguma dúvida, sugestão ou parceria? Preencha o formulário abaixo ou utilize um de nossos canais de atendimento.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 p-4">
+<form class="flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row gap-6">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-zinc-900 dark:text-zinc-50 text-base font-medium leading-normal pb-2">Nome</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-zinc-900 dark:text-zinc-50 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-zinc-300 dark:border-zinc-700 bg-background-light dark:bg-zinc-800 focus:border-primary dark:focus:border-primary h-14 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 p-[15px] text-base font-normal leading-normal" placeholder="Digite seu nome completo" value=""/>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-zinc-900 dark:text-zinc-50 text-base font-medium leading-normal pb-2">Email</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-zinc-900 dark:text-zinc-50 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-zinc-300 dark:border-zinc-700 bg-background-light dark:bg-zinc-800 focus:border-primary dark:focus:border-primary h-14 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 p-[15px] text-base font-normal leading-normal" placeholder="seu.email@exemplo.com" type="email" value=""/>
+</label>
+</div>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-zinc-900 dark:text-zinc-50 text-base font-medium leading-normal pb-2">Assunto</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-zinc-900 dark:text-zinc-50 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-zinc-300 dark:border-zinc-700 bg-background-light dark:bg-zinc-800 focus:border-primary dark:focus:border-primary h-14 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 p-[15px] text-base font-normal leading-normal" placeholder="Sobre o que você gostaria de falar?" value=""/>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-zinc-900 dark:text-zinc-50 text-base font-medium leading-normal pb-2">Mensagem</p>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-zinc-900 dark:text-zinc-50 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-zinc-300 dark:border-zinc-700 bg-background-light dark:bg-zinc-800 focus:border-primary dark:focus:border-primary min-h-32 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 p-[15px] text-base font-normal leading-normal" placeholder="Digite sua mensagem aqui..."></textarea>
+</label>
+<button class="flex min-w-[84px] max-w-[480px] w-full sm:w-auto cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-zinc-900 text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity" type="submit">
+<span class="truncate">Enviar Mensagem</span>
+</button>
+</form>
+<div class="flex flex-col gap-8">
+<div class="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6 flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="flex items-center justify-center size-12 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<h3 class="font-bold text-lg text-zinc-900 dark:text-zinc-50">Email</h3>
+<p class="text-zinc-600 dark:text-zinc-400">Nossa equipe de suporte está pronta para ajudar.</p>
+<a class="text-primary font-medium hover:underline" href="mailto:contato@coletaseletiva.com">contato@coletaseletiva.com</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex items-center justify-center size-12 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h3 class="font-bold text-lg text-zinc-900 dark:text-zinc-50">Telefone</h3>
+<p class="text-zinc-600 dark:text-zinc-400">Disponível de Seg. a Sex. das 9h às 18h.</p>
+<a class="text-primary font-medium hover:underline" href="tel:+(83)9988530075">+55 (83)9988530075</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex items-center justify-center size-12 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h3 class="font-bold text-lg text-zinc-900 dark:text-zinc-50">Endereço</h3>
+<p class="text-zinc-600 dark:text-zinc-400">João Pessoa-Paraíba<br/> - </p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="font-bold text-xl text-zinc-900 dark:text-zinc-50">Nossa Localização</h3>
+<div class="w-full h-80 rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-800">
+<img class="w-full h-full object-cover" data-alt="Mapa mostrando a localização da sede da Coleta Seletiva em São Paulo." data-location="São Paulo, SP" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnGxkO81_M2brjqiwVqAPdAIrlV-HTeeInCpFgwl77eldCzjdFXDmjAebrL2Oun-5o4sNDGdBjuC0Ft5UINABXy9kBuLZip65YNrB2nFSFeL9hzguuqwdAqbqAl_mRecKp_sZzkluWMKj-r44J3nEdtCnjivW_k_HQCb0bJLWvVRgIzQmDlsKLs117nCAYiLfrF8rlJiGheO9xBPimrOYYnEEaZZdjtKxzCy7YHYbBw5-FUfCHFzV4LkHYQ75lo4V6t6jK7Ek2LSo"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>
