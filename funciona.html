@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleta Seletiva - Como Funciona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Variáveis de Cores */
+        :root {
+            --color-primary: #17cf54; /* Verde Vibrante */
+            --color-secondary: #1e4620; /* Verde Escuro */
+            --color-text: #333333;
+            --color-text-light: #666666;
+            --color-background: #f8f8f8;
+            --color-white: #ffffff;
+        }
+
+        /* Reset Básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-white);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- Estilo do Cabeçalho (Header) --- */
+        .header {
+            background-color: var(--color-white);
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--color-primary);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            margin-right: 8px;
+            color: var(--color-primary);
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav ul li {
+            margin: 0 15px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            padding: 5px 0;
+            transition: color 0.3s;
+        }
+
+        .nav ul li a:hover {
+            color: var(--color-primary);
+        }
+
+        .nav ul li a.active {
+            color: var(--color-primary);
+            border-bottom: 2px solid var(--color-primary);
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .btn-header {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .btn-header:hover {
+            background-color: #17cf54;
+        }
+
+        .btn-small {
+            padding: 8px 15px;
+            font-size: 0.9em;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            margin-top: 10px;
+        }
+
+        .btn-small:hover {
+            background-color: #17cf54;
+        }
+
+        /* --- Estilo da Seção Principal (Hero Small) --- */
+        .hero-small {
+            background-color: var(--color-background);
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+
+        .hero-small h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: var(--color-primary);
+        }
+
+        .hero-small p {
+            font-size: 1.1em;
+            color: var(--color-text-light);
+        }
+
+        /* --- Estilo da Seção de Processo (Process Steps) --- */
+        .process-steps {
+            padding: 60px 0;
+            background-color: var(--color-white);
+        }
+
+        .process-steps h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: var(--color-text);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .step-card {
+            background-color: var(--color-background);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-icon {
+            font-size: 2.5em;
+            color: var(--color-primary);
+            margin-bottom: 15px;
+        }
+
+        .step-title {
+            font-size: 1.4em;
+            color: var(--color-primary);
+            margin-bottom: 15px;
+        }
+
+        .step-card p {
+            margin-bottom: 15px;
+            color: var(--color-text-light);
+            text-align: left;
+        }
+
+        .checklist, .stats {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .checklist li, .stats li {
+            margin-bottom: 8px;
+            color: var(--color-text-light);
+        }
+
+        .checklist li i, .stats li i {
+            color: var(--color-primary);
+            margin-right: 8px;
+        }
+
+        .note {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #999;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* --- Estilo da Seção FAQ --- */
+        .faq-section {
+            padding: 40px 0 80px;
+            background-color: var(--color-background);
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: var(--color-text);
+        }
+
+        .faq-item {
+            background-color: var(--color-white);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border-left: 5px solid var(--color-primary);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .faq-item h4 {
+            color: var(--color-text);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .faq-item p {
+            color: var(--color-text-light);
+        }
+
+        /* --- Estilo do Rodapé (Footer) --- */
+        .footer {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        /* --- Responsividade --- */
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+            }
+
+            .nav ul {
+                margin: 15px 0;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav ul li {
+                margin: 5px 10px;
+            }
+
+            .btn-header {
+                width: 100%;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-leaf logo-icon"></i>
+                <span>Coleta Seletiva</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="funciona.html" class="active">Como Funciona</a></li>
+                    <li><a href="ponto.html">Pontos de Coleta</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-header">Encontre Pontos</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-small">
+            <div class="container">
+                <h1>Como Funciona a Coleta Seletiva</h1>
+                <p>Entenda o processo completo, desde a separação em sua casa até a destinação final dos materiais recicláveis.</p>
+            </div>
+        </section>
+
+        <section class="process-steps">
+            <div class="container">
+                <h2>O Caminho da Reciclagem: Simples, Rápido e Eficiente</h2>
+                <div class="steps-grid">
+                    
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-recycle"></i></div>
+                        <h3 class="step-title">1. Separe Corretamente</h3>
+                        <p>O primeiro passo é o mais importante. Em casa, separe os materiais secos e limpos (plástico, papel, metal e vidro) do lixo orgânico e rejeitos. Lembre-se de lavar embalagens para evitar odores e contaminação.</p>
+                        <ul class="checklist">
+                            <li><i class="fas fa-check-circle"></i> Plástico: Garrafas PET, potes, sacolas.</li>
+                            <li><i class="fas fa-check-circle"></i> Papel: Jornais, revistas, caixas de papelão.</li>
+                            <li><i class="fas fa-check-circle"></i> Metal: Latas de alumínio e aço, ferragens.</li>
+                            <li><i class="fas fa-check-circle"></i> Vidro: Garrafas, potes, frascos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3 class="step-title">2. Encontre o Local de Descarte</h3>
+                        <p>Utilize nosso mapa interativo para localizar o ponto de coleta mais conveniente para você. Pode ser um Ecoponto, um PEV (Ponto de Entrega Voluntária) ou o local de passagem do caminhão da coleta seletiva em seu bairro.</p>
+                        <a href="#" class="btn btn-small">Ver Mapa de Pontos</a>
+                        <p class="note">Verifique os horários de funcionamento e os tipos de materiais aceitos em cada local.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h3 class="step-title">3. Descarte e Apoie a Causa</h3>
+                        <p>Leve seus materiais separados ao ponto de coleta. Ao fazer isso, você garante que eles serão encaminhados para cooperativas de reciclagem, gerando renda para famílias e contribuindo diretamente para um futuro mais sustentável.</p>
+                        <p><strong>Seu descarte faz a diferença:</strong></p>
+                        <ul class="stats">
+                            <li><i class="fas fa-chart-line"></i> Redução de lixo em aterros.</li>
+                            <li><i class="fas fa-bolt"></i> Economia de energia e recursos naturais.</li>
+                            <li><i class="fas fa-users"></i> Geração de emprego e renda.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Dúvidas Frequentes</h2>
+                <div class="faq-item">
+                    <h4>O que fazer com pilhas e baterias?</h4>
+                    <p>Pilhas e baterias são resíduos especiais e não devem ser descartados na coleta seletiva comum. Procure por pontos de coleta específicos em supermercados, farmácias ou lojas de eletrônicos.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Preciso lavar as embalagens?</h4>
+                    <p>Sim, é fundamental. Lave ou limpe o máximo possível as embalagens (como caixas de leite, latas de atum, etc.) para remover restos de alimentos. Isso evita a proliferação de insetos e garante a qualidade do material para a reciclagem.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>O que é considerado "rejeito"?</h4>
+                    <p>Rejeito é aquilo que não pode ser reciclado, como papel higiênico, fraldas descartáveis, adesivos, fitas crepe e lixo de banheiro em geral. Estes devem ser descartados no lixo comum.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Coleta Seletiva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
